@@ -1,7 +1,7 @@
 <template>
     <div id="nav">
       <router-link to="/" class="nav-item active">关于我</router-link>
-      <span class="nav-item-divider">&nbsp;|&nbsp;</span>
+<!--      <span class="nav-item-divider">&nbsp;|&nbsp;</span>-->
       <router-link to="/khex" class="nav-item">KHex</router-link>
     </div>
 </template>
@@ -44,13 +44,13 @@
   }
 
   .nav-item.active {
-    font-weight: normal;
+    font-weight: bold;
   }
 
-  .nav-item-divider {
-    margin: 0;
-    padding: 0;
-    font-weight: lighter;
-    transform: scale(.8);
-  }
+  /*.nav-item-divider {*/
+  /*  margin: 0;*/
+  /*  padding: 0;*/
+  /*  font-weight: lighter;*/
+  /*  transform: scale(.8);*/
+  /*}*/
 </style>

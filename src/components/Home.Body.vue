@@ -32,7 +32,6 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    font-weight: lighter;
     z-index: 1;
   }
   #avatar {
@@ -52,6 +51,9 @@
   }
   #name {
     margin: 0;
+    /*font-weight: normal;*/
+  }
+  #name small {
     font-weight: normal;
   }
   #summary {

@@ -18,6 +18,7 @@
     margin: auto;
     background-color: rgba(33, 33, 33, .35);
     /*backdrop-filter: blur(10px);*/
+    /*font-weight: lighter;*/
     z-index: 2;
     align-items: center;
     justify-content: center;
