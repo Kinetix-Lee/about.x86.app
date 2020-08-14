@@ -1,0 +1,59 @@
+export default {
+  // debug: true,
+  state: {
+    avatarMouseover: false,
+    introduction: '',
+  },
+  setAvatarMouseover(newValue) {
+    // if (this.debug) console.log('avatarMouseover = ', newValue);
+    this.state.avatarMouseover = newValue;
+  },
+  generateIntroductionAuto() {
+    this.introductionToDisplay = Math.round(Math.random() * 4);
+    this.introduction = this.introductionList[this.introductionToDisplay];
+    return this.introduction;
+  },
+  linkList: [
+    {
+      index: 'QQ',
+      name: 'QQ',
+      target: 'https://wpa.qq.com/msgrd?v=3&uin=202938099&site=qq&menu=yes',
+    },
+    {
+      index: 'NCM',
+      name: '网易云音乐',
+      target: 'https://music.163.com/#/user/home?id=341431918',
+    },
+    {
+      index: 'BiliBili',
+      name: '哔哩哔哩',
+      target: 'https://space.bilibili.com/182888860',
+    },
+    // {
+    //   index: 'Twitter',
+    //   name: 'Twitter',
+    //   target: 'https://twitter.com/Kinetixxx_',
+    // },
+    {
+      index: 'GitHub',
+      name: 'GitHub',
+      target: 'https://github.com/Kinetix-Lee',
+    },
+    {
+      index: 'KHex',
+      name: 'KHex',
+      target: 'https://x86.app/',
+    },
+    // {
+    //   index: 'default',
+    //   target: '/',
+    // },
+  ],
+  introductionList: [
+    '四肢不发达，头脑很简单。',
+    'console.log(\'Hello world!\');',
+    '学生，不入流业余 Coder。',
+    'Trouble making. <b>Redefined. </b>',
+    'Hi there! Here\'s Kinetix. ',
+  ],
+};

@@ -1,9 +1,15 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
-import Redirector from '../components/Redirector.vue';
+
+import VueLazyload from 'vue-lazyload';
+
+import Home from '../views/Index.vue';
+import Redirector from '../views/Redirector.vue';
 
 Vue.use(VueRouter);
+Vue.use(VueLazyload, {
+  error: 'https://assets.fwdl.ink/universal/static/lazyload/error.png',
+});
 
 const routes = [
   {
@@ -15,7 +21,6 @@ const routes = [
     path: '/:target',
     name: 'Redirector',
     component: Redirector,
-    props: (route) => route,
   },
 ];
 
