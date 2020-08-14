@@ -2,10 +2,13 @@
   <div id="home">
     <home-body />
     <div
-      v-lazy:background-image
-        ="'./background.webp'"
+      v-lazy:background-image="backgroundImage"
       v-bind:class="{ 'avatarMouseoverBackground': state.avatarMouseover }"
       id="background"></div>
+<!--    <img-->
+<!--      src="@/assets/image/background.webp"-->
+<!--      v-bind:class="{ 'avatarMouseoverBackground': state.avatarMouseover }"-->
+<!--      alt="Failed loading background image" id="bacskground">-->
   </div>
 </template>
 
@@ -47,8 +50,10 @@
 </style>
 
 <script>
+
 import homeBody from '../components/Home.Body.vue';
 import globalStore from '../store/global';
+import backgroundImage from '../assets/images/background.jpg';
 
 // console.log(globalStore.state);
 
@@ -57,7 +62,13 @@ export default {
     'home-body': homeBody,
   },
   data() {
-    return { state: globalStore.state };
+    return {
+      state: globalStore.state,
+      publicPath: '/assets/',
+      backgroundImage,
+      // eslint-disable-next-line global-require,import/no-unresolved
+      // backgroundImageUri: require('@assets/image/background.jpg'),
+    };
   },
   methods: {
     setAvatarMouseover: (newValue) => { globalStore.setAvatarMouseover(newValue); },
