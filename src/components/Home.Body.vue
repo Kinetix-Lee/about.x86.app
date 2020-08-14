@@ -63,6 +63,9 @@
     margin: .5rem;
     padding: .25rem;
   }
+  #introduction h1 {
+    margin-top: .3rem;
+  }
   /*#name small {*/
   /*  font-weight: normal;*/
   /*}*/
@@ -78,7 +81,7 @@
   .social-link-item {
     display: block;
     margin: auto;
-    padding: .5rem;
+    padding: .8rem;
     color: white;
     user-select: none;
     text-decoration: none;
