@@ -20,12 +20,15 @@
     /*backdrop-filter: blur(10px);*/
     z-index: 2;
     align-items: center;
+    justify-content: center;
   }
   p {
     position: absolute;
     left: 0;
     right: 0;
     text-align: center;
+    margin: auto;
+    padding: 0;
   }
   a {
     color: whitesmoke;
