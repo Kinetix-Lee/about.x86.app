@@ -6,7 +6,7 @@
       v-lazy="'https://assets.fwdl.ink/universal/avatars/Kinetix/Kinetix.svg'"
       id="avatar" alt="Kinetix" draggable="false">
     <div id="introduction">
-      <h1 id="name">Kinetix <small>(A.k.a. Kx)</small></h1>
+      <h1 id="name">Kinetix <small>(Kx)</small></h1>
       <div id="summary" v-html="generateIntroductionAuto()"></div>
     </div>
     <div id="social-link-group">
