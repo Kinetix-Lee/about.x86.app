@@ -58,6 +58,7 @@
   }
   #summary {
     margin-top: .25rem;
+    font-size: 1.4rem;
   }
   #introduction {
     margin: .5rem;

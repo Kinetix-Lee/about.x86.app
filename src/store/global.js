@@ -9,7 +9,7 @@ export default {
     this.state.avatarMouseover = newValue;
   },
   generateIntroductionAuto() {
-    this.introductionToDisplay = Math.round(Math.random() * 4);
+    this.introductionToDisplay = Math.round(Math.random() * 6);
     this.introduction = this.introductionList[this.introductionToDisplay];
     return this.introduction;
   },
@@ -54,6 +54,8 @@ export default {
     'console.log(\'Hello world!\');',
     '学生，啥都不会的业余的打代码的。',
     '<span class="light">Trouble making. </span>Redefined. ',
+    '<span class="light">Mess making. </span>Redefined. ',
     'Hi there! Here\'s Kinetix. ',
+    '你好，我是 Kinetix。',
   ],
 };
