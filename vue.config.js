@@ -1,7 +1,7 @@
 module.exports = {
   outputDir: 'build',
   lintOnSave: true,
-  integrity: true,
+  integrity: false,
   pages: {
     index: {
       entry: 'src/main.js',
