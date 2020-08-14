@@ -53,7 +53,7 @@ export default {
     '四肢不发达，头脑很简单。',
     'console.log(\'Hello world!\');',
     '学生，啥都不会的业余的打代码的。',
-    'Trouble making. <b>Redefined. </b>',
+    '<span class="light">Trouble making. </span>Redefined. ',
     'Hi there! Here\'s Kinetix. ',
   ],
 };

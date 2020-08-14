@@ -99,6 +99,9 @@
     outline: .4rem rgba(33, 33, 33, .2) solid;
     transition: .05s ease-in-out;
   }
+  .light {
+    font-weight: lighter;
+  }
 </style>
 <script>
 import globalStore from '../store/global';
