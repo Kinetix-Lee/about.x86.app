@@ -15,9 +15,6 @@ git config user.email "lee@x86.app"
 git clone --depth=1 git@github.com:Kinetix-Lee/Kinetix-Lee.git deploy
 cd deploy
 
-# clear ssh-agent processes
-killall ssh-agent
-
 # apply changes
 rm -rf docs
 cp ../dist ./docs -r
@@ -27,3 +24,6 @@ touch ./docs/.nojekyll
 git add --all
 git commit -m "Update from commit ${COMMIT_ID} in Kinetix-Lee/about.x86.app"
 git push origin HEAD
+
+# clear ssh-agent processes
+killall ssh-agent
