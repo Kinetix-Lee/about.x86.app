@@ -1,21 +1,12 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-
-import VueLazyload from 'vue-lazyload';
-
-import Home from '../views/Index.vue';
+import { createRouter, createWebHashHistory } from 'vue-router';
+import Index from '../views/Index.vue';
 import Redirector from '../views/Redirector.vue';
-
-Vue.use(VueRouter);
-Vue.use(VueLazyload, {
-  error: 'https://assets.fwdl.ink/universal/static/lazyload/error.png',
-});
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: Index,
   },
   {
     path: '/:target',
@@ -24,8 +15,7 @@ const routes = [
   },
 ];
 
-const router = new VueRouter({
+export default createRouter({
+  history: createWebHashHistory(),
   routes,
 });
-
-export default router;
