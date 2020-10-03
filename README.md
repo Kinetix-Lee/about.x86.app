@@ -1,5 +1,4 @@
 # about.x86.app
-# about.x86.app
 ![Build Test](https://github.com/Kinetix-Lee/about.x86.app/workflows/Build%20Test/badge.svg)
 [![Build Status](https://travis-ci.org/Kinetix-Lee/about.x86.app.svg?branch=master)](https://travis-ci.org/Kinetix-Lee/about.x86.app)
 
