@@ -1,25 +1,17 @@
 {
   "name": "about.x86.app",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vite build"
   },
   "dependencies": {
-    "vue": "^2.6.11",
+    "vue": "^3.0.0-rc.1",
     "vue-lazyload": "^1.3.3",
-    "vue-router": "^3.2.0"
+    "vue-router": "^4.0.0-beta.12"
   },
   "devDependencies": {
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/eslint-config-airbnb": "^5.0.2",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "vite": "^1.0.0-rc.1"
   }
 }

@@ -1,10 +1,13 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
+
+// 插件
+import RouterIndex from './router/index.js';
+
+// 视图及样式
 import App from './App.vue';
-import router from './router/index';
+import './index.css';
 
-Vue.config.productionTip = false;
+const instance = createApp(App);
 
-new Vue({
-  router,
-  render(h) { return h(App); },
-}).$mount('#app');
+instance.use(RouterIndex);
+instance.mount('#app');

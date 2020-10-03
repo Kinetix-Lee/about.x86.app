@@ -32,11 +32,11 @@ export default {
         case 'bilibili':
         case 'twitter':
         case 'github':
-        case 'khex':
+        case 'kdev':
           linkList.forEach((value) => {
             if (
               route.params.target.toLowerCase() === value.index.toLowerCase()
-            ) window.open(value.target, '_blank');
+            ) window.location.href = value.target;
           });
           break;
         default:
