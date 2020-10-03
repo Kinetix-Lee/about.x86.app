@@ -2,13 +2,12 @@
   <div id="home">
     <home-body />
     <div
-      v-lazy:background-image="backgroundImage"
-      v-bind:class="{ 'avatarMouseoverBackground': state.avatarMouseover }"
+      v-bind:class="{ 'avatarMouseoverBackground': store.state.avatarMouseover }"
       id="background"></div>
-<!--    <img-->
-<!--      src="@/assets/image/background.webp"-->
-<!--      v-bind:class="{ 'avatarMouseoverBackground': state.avatarMouseover }"-->
-<!--      alt="Failed loading background image" id="bacskground">-->
+  <!-- <img
+    v-bind:src="backgroundImage"
+    v-bind:class="{ 'avatarMouseoverBackground': state.avatarMouseover }"
+    alt="Failed loading background image" id="background"> -->
   </div>
 </template>
 
@@ -34,6 +33,7 @@
     top: 0;
     bottom: 0;
     z-index: -1;
+    background-image: url('../assets/images/background.jpg');
     background-repeat: no-repeat;
     background-color: #212121;
     background-position: center;
@@ -50,12 +50,10 @@
 </style>
 
 <script>
+import { onMounted } from 'vue';
 
 import homeBody from '../components/Home.Body.vue';
 import globalStore from '../store/global';
-import backgroundImage from '../assets/images/background.jpg';
-
-// console.log(globalStore.state);
 
 export default {
   components: {
@@ -63,15 +61,9 @@ export default {
   },
   data() {
     return {
-      state: globalStore.state,
+      store: globalStore,
       publicPath: '/assets/',
-      backgroundImage,
-      // eslint-disable-next-line global-require,import/no-unresolved
-      // backgroundImageUri: require('@assets/image/background.jpg'),
     };
-  },
-  methods: {
-    setAvatarMouseover: (newValue) => { globalStore.setAvatarMouseover(newValue); },
   },
 };
 </script>
