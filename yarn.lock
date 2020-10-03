@@ -2021,11 +2021,6 @@ vite@^1.0.0-rc.1:
     vue "^3.0.0-rc.5"
     ws "^7.2.3"
 
-vue-lazyload@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.npm.taobao.org/vue-lazyload/download/vue-lazyload-1.3.3.tgz#4df50a271bde9b74c3caf7a228d6e0af50d5682f"
-  integrity sha1-TfUKJxvem3TDyveiKNbgr1DVaC8=
-
 vue-router@^4.0.0-beta.12:
   version "4.0.0-beta.13"
   resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-4.0.0-beta.13.tgz#4611d09a9e44f231cc401ecc294a7f2dcb30e6a6"
