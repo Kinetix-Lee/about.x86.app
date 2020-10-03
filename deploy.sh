@@ -16,7 +16,7 @@ git clone --depth=1 git@github.com:Kinetix-Lee/Kinetix-Lee.git deploy
 cd deploy
 
 # clear ssh-agent processes
-killall ssh-agent -u deploy
+killall ssh-agent
 
 # apply changes
 rm -rf docs
