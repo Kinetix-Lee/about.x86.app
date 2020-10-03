@@ -14,5 +14,5 @@ install:
   - yarn
   - yarn build
 after_script:
-  - chmod +x ./ci-deploy.sh
-  - bash ./ci-deploy.sh
+  - chmod +x ./deploy.sh
+  - bash ./deploy.sh
