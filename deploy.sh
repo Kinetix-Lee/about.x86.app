@@ -15,10 +15,14 @@ git config user.email "lee@x86.app"
 git clone --depth=1 git@github.com:Kinetix-Lee/Kinetix-Lee.git deploy
 cd deploy
 
+# backup CNAME
+cp docs/CNAME ./
+
 # apply changes
 rm -rf docs
 cp ../dist ./docs -r
 touch ./docs/.nojekyll
+mv ./CNAME docs/
 
 # commit & push
 git add --all
