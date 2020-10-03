@@ -111,6 +111,7 @@
 import globalStore from '../store/global';
 
 export default {
+  name: 'HomeBody',
   data() {
     return {
       store: globalStore,

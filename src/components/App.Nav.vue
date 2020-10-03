@@ -54,3 +54,9 @@
   /*  transform: scale(.8);*/
   /*}*/
 </style>
+
+<script>
+export default {
+  name: 'AppNav',
+}
+</script>

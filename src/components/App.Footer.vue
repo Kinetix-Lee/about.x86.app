@@ -37,5 +37,7 @@
 </style>
 
 <script>
-
+export default {
+  name: 'AppFooter',
+}
 </script>
