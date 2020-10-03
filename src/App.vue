@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <app-nav />
+    <AppNav />
     <router-view />
-    <app-footer />
+    <AppFooter />
   </div>
 </template>
 
@@ -10,14 +10,14 @@
 </style>
 
 <script>
-import appNav from './components/App.Nav.vue';
-import appFooter from './components/App.Footer.vue';
+import AppNav from './components/App.Nav.vue';
+import AppFooter from './components/App.Footer.vue';
 
 export default {
   name: 'app',
   components: {
-    'app-nav': appNav,
-    'app-footer': appFooter,
+    AppNav,
+    AppFooter,
   },
 };
 </script>
