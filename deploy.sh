@@ -19,10 +19,10 @@ cd deploy
 killall ssh-agent -u deploy
 
 # apply changes
-rm -rf pages
-cp ../dist ./pages -r
+rm -rf docs
+cp ../dist ./docs -r
 
 # commit & push
 git add --all
-git commit -m "CI built pages from commit ${COMMIT_ID} in Kinetix-Lee/about.x86.app"
+git commit -m "Update from commit ${COMMIT_ID} in Kinetix-Lee/about.x86.app"
 git push origin HEAD
