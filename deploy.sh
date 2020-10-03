@@ -21,6 +21,7 @@ killall ssh-agent
 # apply changes
 rm -rf docs
 cp ../dist ./docs -r
+touch ./docs/.nojekyll
 
 # commit & push
 git add --all
