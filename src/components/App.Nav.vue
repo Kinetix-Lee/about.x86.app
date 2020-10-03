@@ -2,7 +2,7 @@
     <div id="nav">
       <router-link to="/" class="nav-item active">关于我</router-link>
 <!--      <span class="nav-item-divider">&nbsp;|&nbsp;</span>-->
-      <router-link to="/khex" class="nav-item">KHex</router-link>
+      <router-link to="/kdev" class="nav-item">Kdev</router-link>
     </div>
 </template>
 
