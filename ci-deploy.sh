@@ -4,7 +4,7 @@ export COMMIT_ID=$(git rev-parse --short HEAD)
 
 # start SSH agent
 eval `ssh-agent -s`
-ssh-add ~/github.key
+ssh-add ./github.key
 
 # Git configurations
 git config user.name "Kinetix-Lee"
