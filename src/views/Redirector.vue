@@ -36,7 +36,7 @@ export default {
           linkList.forEach((value) => {
             if (
               route.params.target.toLowerCase() === value.index.toLowerCase()
-            ) window.open(value.target, '_blank');
+            ) window.location.href = value.target;
           });
           break;
         default:
