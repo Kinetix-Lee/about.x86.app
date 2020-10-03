@@ -3,7 +3,7 @@
     <img
       v-on:mouseover="store.setAvatarMouseover(true)"
       v-on:mouseleave="store.setAvatarMouseover(false)"
-      src="https://assets.fwdl.ink/universal/avatars/Kinetix/Kinetix.svg"
+      src="https://cdn.jsdelivr.net/gh/Kinetix-Lee/Kinetix-Lee@master/images/Kinetix.svg"
       id="avatar" alt="Kinetix" draggable="false">
     <div id="introduction">
       <h1 id="name">Kinetix <small>(Kx)</small></h1>
