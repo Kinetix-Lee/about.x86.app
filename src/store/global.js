@@ -40,8 +40,8 @@ export default {
       target: 'https://github.com/Kinetix-Lee',
     },
     {
-      index: 'KHex',
-      name: 'KHex',
+      index: 'Kdev',
+      name: 'Kdev',
       target: 'https://x86.app/',
     },
     // {
