@@ -43,9 +43,6 @@ export default {
           break;
       }
     }, 500);
-    setTimeout(() => {
-      window.location.href = '/';
-    }, 1000);
   },
 };
 </script>
