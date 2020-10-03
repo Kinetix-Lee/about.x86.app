@@ -12,7 +12,7 @@ before_install:
   - npm i yarn -g
 install:
   - yarn
-  - yarn build
+  - npm run build
 after_script:
   - chmod +x ./deploy.sh
   - bash ./deploy.sh
