@@ -36,19 +36,26 @@
     text-align: center;
     z-index: 1;
   }
-  #avatar {
-    display: block;
-    width: 8rem;
-    height: 8rem;
+  #avatar-container {
+    width: 10rem;
+    height: 10rem;
     padding: 2rem;
+    padding-bottom: 1rem;
+  }
+  #avatar {
+    width: 100%;
+    height: 100%;
+    display: block;
     background-color: whitesmoke;
-    outline: .4rem rgba(33, 33, 33, .2) solid;
+    box-shadow: 0 0 0 .4rem rgba(33, 33, 33, .2);
     transition: .15s ease-in-out;
+    border-radius: 5%;
     -webkit-user-drag: none;
     user-select: none;
   }
   #avatar:hover {
-    outline: .8rem rgba(33, 33, 33, .4) solid;
+    box-shadow: 0 0 0 .8rem rgba(33, 33, 33, .4);
+    border-radius: 2%;
     transition: .15s ease-in-out;
   }
   #name {
