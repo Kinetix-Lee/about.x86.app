@@ -41,7 +41,7 @@ export default {
     },
     {
       index: 'Kdev',
-      name: 'Kdev',
+      name: 'x86.app',
       target: 'https://x86.app/',
     },
     // {
