@@ -8,7 +8,7 @@
         id="avatar" alt="Kinetix" draggable="false">
     </div>
     <div id="introduction">
-      <h1 id="name">Kinetix <small>(Kx)</small></h1>
+      <p id="name">Kinetix<small id="name-ipa"> [kaɪ'netɪks]</small></p>
       <div id="summary" v-html="generateIntroductionAuto()"></div>
     </div>
     <div id="social-link-group">
@@ -60,10 +60,13 @@
   }
   #name {
     margin: 0;
-    /*font-weight: normal;*/
-  }
-  #name small {
+    font-size: 2rem;
     font-weight: normal;
+  }
+  #name-ipa {
+    font-size: 1rem;
+    font-weight: lighter;
+    vertical-align: text-top;
   }
   #summary {
     margin-top: .25rem;
